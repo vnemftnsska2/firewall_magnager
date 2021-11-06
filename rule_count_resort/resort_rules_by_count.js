@@ -1,17 +1,17 @@
-const testFunc = (arr) => {
+const resortRulesByHitCount = (arr) => {
   let ret = [];
   const targetArr = [];
   for (let i = 0; i < arr.length; i++) {
     targetArr.push(arr[i]);
     if (arr[i].action === 'deny' || i === arr.length - 1) {
-      ret = [...ret, ...sortByDesc(targetArr)];
+      ret = [...ret, ...sortUpByManyHitCount(targetArr)];
       targetArr.length = 0;
     }
   }
   return ret;
 };
 
-const sortByDesc = (rules) => {
+const sortUpByManyHitCount = (rules) => {
   for (let i = 0; i < rules.length; i++) {
     if (rules[i].action === 'allow') {
       for (let j = 0; j < rules.length; j++) {
@@ -26,7 +26,7 @@ const sortByDesc = (rules) => {
   return rules;
 }
 
-const result = testFunc(RULES);
+const result = resortRulesByHitCount(RULES);
 console.log(result);
 document.getElementById('result').innerHTML
   = result.map(rule => JSON.stringify(rule)).join('<br>');
