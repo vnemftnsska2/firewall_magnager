@@ -11,7 +11,7 @@
 <body>
   <article id="result"></article>
   <script src="rule_data.js"></script>
-  <script src="test.js"></script>
+  <script src="resort_rules_by_count.js"></script>
 </body>
 
 </html>
