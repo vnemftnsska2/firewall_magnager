@@ -1,10 +1,10 @@
 const resortRulesByHitCount = (arr) => {
-  let ret = [];
+  const ret = [];
   const targetArr = [];
   for (let i = 0; i < arr.length; i++) {
     targetArr.push(arr[i]);
     if (arr[i].action === 'deny' || i === arr.length - 1) {
-      ret = [...ret, ...sortUpByManyHitCount(targetArr)];
+      ret.push(sortUpByManyHitCount(targetArr));
       targetArr.length = 0;
     }
   }
