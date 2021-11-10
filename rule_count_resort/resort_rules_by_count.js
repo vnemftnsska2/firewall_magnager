@@ -11,8 +11,7 @@ const resortRulesByHitCount = (arr) => {
   return ret;
 };
 
-const sortUpByManyHitCount = (arr) => {
-  const rules = [...arr];
+const sortUpByManyHitCount = (rules) => {
   for (let i = 0; i < rules.length; i++) {
     if (rules[i].action === "allow") {
       // Deny 변경 X
