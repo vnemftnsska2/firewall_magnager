@@ -77,7 +77,7 @@ const RULES = [
     destination: [],
     service: [],
     action: "allow",
-    count: 9,
+    count: 0,
   },
   {
     id: 11,
