@@ -13,10 +13,14 @@ const resortRulesByHitCount = (arr) => {
 
 const sortUpByManyHitCount = (rules) => {
   for (let i = 0; i < rules.length; i++) {
-    if (rules[i].action === "allow") {
+    if (rules[i].action === "allow" && !isAllAny(rules[i])) {
       // Deny 변경 X
       for (let j = 0; j < rules.length; j++) {
-        if (rules[j].action !== "deny" && rules[i].count > rules[j].count) {
+        if (
+          !isAllAny(rules[j]) &&
+          rules[j].action !== "deny" &&
+          rules[i].count > rules[j].count
+        ) {
           // Deny 변경 X
           const temp = rules[i];
           rules[i] = rules[j];
@@ -26,6 +30,17 @@ const sortUpByManyHitCount = (rules) => {
     }
   }
   return rules;
+};
+
+const isAllAny = ({ source, destination, service }) => {
+  if (
+    source.includes("any") &&
+    destination.includes("any") &&
+    service.includes("any")
+  ) {
+    return true;
+  }
+  return false;
 };
 
 const result = resortRulesByHitCount(RULES);

@@ -1,142 +1,226 @@
 const RULES = [
   {
     id: 1,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 4
+    count: 4,
   },
   {
     id: 2,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 0
+    count: 0,
   },
   {
     id: 3,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 40
+    count: 40,
   },
   {
     id: 4,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 22
+    count: 22,
   },
   {
     id: 5,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 34
+    count: 34,
   },
   {
     id: 6,
+    source: [],
+    destination: [],
+    service: [],
     action: "deny",
-    count: 5
+    count: 5,
   },
   {
     id: 7,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 8
+    count: 8,
   },
   {
     id: 8,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 5
+    count: 5,
   },
   {
     id: 9,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 0
+    count: 0,
   },
   {
     id: 10,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 9
+    count: 9,
   },
   {
     id: 11,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 0
+    count: 0,
   },
   {
     id: 12,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 90
+    count: 90,
   },
   {
     id: 13,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 100
+    count: 100,
   },
   {
     id: 14,
+    source: [],
+    destination: [],
+    service: [],
     action: "deny",
-    count: 77
+    count: 77,
   },
   {
     id: 15,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 222
+    count: 222,
   },
   {
     id: 16,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 44
+    count: 44,
   },
   {
     id: 17,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 365
+    count: 365,
   },
   {
     id: 18,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 908
+    count: 908,
   },
   {
     id: 19,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 14
+    count: 14,
   },
   {
     id: 20,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 2146
+    count: 2146,
   },
   {
     id: 21,
+    source: [],
+    destination: [],
+    service: [],
     action: "allow",
-    count: 8844
+    count: 8844,
   },
   {
     id: 22,
+    source: [],
+    destination: [],
+    service: [],
     action: "deny",
-    count: 9000
+    count: 9000,
   },
   {
     id: 23,
+    source: [],
+    destination: [],
+    service: [],
     count: 878,
-    action: "allow"
+    action: "allow",
   },
   {
     id: 24,
+    source: [],
+    destination: [],
+    service: [],
     count: 637,
-    action: "allow"
+    action: "allow",
   },
   {
     id: 25,
+    source: [],
+    destination: [],
+    service: [],
     count: 2,
-    action: "allow"
+    action: "allow",
   },
   {
     id: 26,
+    source: [],
+    destination: [],
+    service: [],
     count: 0,
-    action: "allow"
+    action: "allow",
   },
   {
     id: 27,
+    source: [],
+    destination: [],
+    service: [],
     count: 888,
-    action: "allow"
+    action: "allow",
   },
   {
     id: 28,
+    source: ["any"],
+    destination: ["any"],
+    service: ["any"],
     count: 99,
-    action: "allow"
+    action: "allow",
   },
-]
+];
